@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <div id="debug"></div>
+    <script>
+        var data = 3;
+        // .. ....
+        var data = 33;
+        /*
+            變數類別：const var let
+            外面層級的變數裡面可以讀的到，但裡面無法讀出外面的
+            但可透過return呼叫出去
+        */
+        function test() {
+            let x = 100;
+            // let x = 101; // Syntax error
+            // let 可以防止重複宣告變數名稱
+            
+            if (x > 0) {
+                let y = x;
+                alert(y);
+            }
+            // alert(y); // error
+            
+            for (let i = 1; i <= 3; i++) {
+                alert(i);
+            }
+            // alert(i);
+
+            data = x;
+        }
+        
+        test();
+        
+        debug.innerHTML = "data = " + data;
+        
+        
+    </script>
+</body>
+</html>

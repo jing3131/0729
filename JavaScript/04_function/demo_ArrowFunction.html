@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <div id="debug"></div>
+    <script>
+    
+        // function test (a) {      
+        //     return a + 1;
+        // }
+        
+        test1();                    // 呼叫方法不一定要在下面
+        function test1(){
+            alert("123");
+        }
+
+        // var test = function (a) {
+        //     return a + 1;
+        // }
+
+        var test =function(){       // 呼叫方法就必須在下面
+            alert("hello");
+        }
+        test();
+        
+        // var test = (a) => {
+        //     return a + 1;
+        // }        
+
+        var test2 = (a) => { return a + 1; }
+        var aa=7;
+        alert(test2(aa));
+        debug.innerHTML= test2(aa)+"aaa";
+        // var test = (a) => { return a + 1; }    
+        // var test = (a) => a + 1;    
+        
+        // var answer = test(5);
+        
+        // alert(answer);
+        
+    </script>
+</body>
+</html>

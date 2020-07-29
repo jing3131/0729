@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="debug">...</div>
+
+    <script>
+        var person = {
+            firstName: "gg",
+            lastName: "Lin",
+            height: 190,
+            sayHello: function(){
+                return "Hi I'm "+this.lastName;
+            }
+        };
+        debug.innerText=person.sayHello();
+
+        var playerList= [
+            {name: "J",number: 2},
+            {name: "L",number: 7},
+            {name: "W",number: 40}
+        ];
+        var s=JSON.stringify(playerList);   // 內容全部轉換成字串
+        var s2='{name: "J",number: 2},{name: "L",number: 7},{name: "W",number: 40}';
+        //var dataList2=JSON.parse(s2);
+        //debug.innerText=dataList2[0].name;
+        //debug.innerText=s;
+
+    </script>
+</body>
+</html>
