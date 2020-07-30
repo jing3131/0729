@@ -78,7 +78,7 @@ a.boxclose {
 3.4	在 style 樣式區塊找出 .box 類別，多寫進以下三行:
 	-webkit-transition: top 3s ease-out;
 	-ms-transition: top 3s ease-out;
-	transition: top 3s ease-out;
+	transition: top 3s ease-out;		/* 特效:距離目標越近越慢 */
 	
 3.5 存檔後，用瀏覽器測試看看，點一下左上角的 Click Me 圖案，看看 box 移動的位置與速度。
 
